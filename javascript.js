@@ -1,15 +1,21 @@
-const container = document.querySelector('.container');
+const grid = document.querySelector('.grid');
 
 for (let i = 0; i < 256; i++){
-    const grid = document.createElement('div');
-    grid.classList.add('grid');
-    grid.addEventListener('mouseenter', () => {
-        grid.style.backgroundColor = 'black'; 
-    });
-
-    grid.addEventListener('mouseleave', () => {
-        grid.style.backgroundColor = 'white';
-    });
-    container.appendChild(grid);
+    const square = document.createElement('div');
+    square.classList.add('square');
+    grid.appendChild(square);
 }
+
+grid.addEventListener('mouseover', (event) => {
+    let target = event.target;
+    if (target.classList.contains('square')) {
+        target.style.backgroundColor = 'black'; 
+    }
+});
+
+const pixels = document.querySelector('.pixels');
+
+pixels.addEventListener('click', () => {
+    let size = prompt("Enter the nuber of squares desired per side (100 max): ");
+});
 

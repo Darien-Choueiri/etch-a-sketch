@@ -4,24 +4,44 @@ body {
     background-color: rgb(100, 102, 105);
     color: rgb(209, 208, 197);
 }
+
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-size: 64px;
+    font-weight: bold;
+    margin: 50px;
 }
 
-.container {
+.grid {
     display: flex;
     flex-wrap: wrap;
     border-style: solid;
     border-color: black;
     width: 480px;
     background-color: white;
-    margin: auto;
 }
 
-.grid {
+.square{
     width: 30px;
     height: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.pixels {
+    font-size: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
