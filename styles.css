@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Hero, sans-serif;
+    background-color: rgb(100, 102, 105);
+    color: rgb(209, 208, 197);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: black;
+    width: 480px;
+    background-color: white;
+    margin: auto;
+}
+
+.grid {
+    width: 30px;
+    height: 30px;
+}
